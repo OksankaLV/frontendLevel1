@@ -7,7 +7,8 @@
 body{
     font-family: 'Roboto Condensed';
     color: var(--color-white);
-    max-width: 1440px;
+    
+   
 }
 
 header {
@@ -139,7 +140,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 150px;
+    padding: 16px 10vw;
 
 }
 .promo h2{
@@ -161,16 +162,27 @@ header {
 .promo button{
     width: 200px;
     height: 50px;
+    font-family:'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: var(--color-background);
 }
 
 .services{
     color: var(--color-background);
     background-color: var(--color-white);
-    padding: 90px 0px 0px 40px;
+    padding-top: 90px;
     /*display: grid;
     grid-template-columns: 36% 64%;*/
     display: flex;
     justify-self: start;
+}
+.services-title {
+    width: 33%;
+    margin-left: 9vw;
 }
 .services-title h3{
     font-size: 48px;
@@ -195,20 +207,19 @@ header {
 }
 
 .services-title p{
-    max-width: 1025px;
     font-family: 'Roboto';
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 400;
-        line-height: 26px;
+        line-height: 24px;
         letter-spacing: 0px;
         text-align: left;
         color: #797979;
 }
 
 .services-items{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    column-count: 4;
+    max-width: 66%;
+  
 }
 .item{
     width: 221px;
@@ -319,20 +330,22 @@ header {
 
 .video-block {
   margin-top: -50px;
-  padding: 80px 50px 70px 50px;
+  padding: 80px 40px 70px 40px;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-items: flex-end;
 }
 .video-block img{
-    max-width: 460px;
-    padding-left: 150px;
-   
+    max-width: 39%;  
+    height: max-content;
 }
 .text-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 60px;
+    max-width: 40%;
 }
 .video-block h2{
     color: var(--color-gray-text);
@@ -370,15 +383,18 @@ header {
 .latest-news{
     background-color: #F9F6E5;
     /*font-family: Roboto Condensed;*/
+    color: var(--color-gray-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.latest-news h2{
     font-size: 48px;
     font-weight: 400;
     line-height: 56px;
     letter-spacing: 0px;
     text-align: center;
-    color: var(--color-gray-text);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 .news-content{
     column-count: 4;
@@ -388,7 +404,7 @@ header {
 .one-news{
     width: 269px;
     position: relative;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
     margin-top: -4px;
 }
 .one-news .img-news{
@@ -530,15 +546,26 @@ background-color: var(--color-background);
     text-align: center;
 }
 .social-table{
-    display: flex;
+   display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-around;
-    padding: 15px;
+    /*padding: 15px;*/
     margin-left: 5em;
     margin-right: 5em;
     border-top: 1px var(--color-light-gray-text) solid;
     border-bottom: 1px var(--color-light-gray-text) solid;
+   
+.fa-brands {
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+}
+.fa-twitter, .fa-google-plus-g, .fa-pinterest{
+    border-left: 1px solid var(--color-light-gray-text);
+}
+
+
 }
 .social-info{
     padding-top: 80px;
@@ -548,6 +575,8 @@ background-color: var(--color-background);
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 .social-info a{
     text-decoration: none;
@@ -579,4 +608,260 @@ div#end a{
             text-decoration: none;
 }
 
+@media only screen and (max-width: 1024px) {
+    .services{
+        display: block;
+    }
+    .services-title {
+        width: 100%;
+    }
+    .services-title h3{
+        text-align: center;
+    }
+    .services-items{
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .text-block{
+        max-width: 55%;
+    }
+    .text-block h2{
+        margin-bottom: 20px;
+    }
+    .news-content {
+        column-count: 3;
+    }
+    .blockquote p{
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .blockquote cite{
+            font-size: 20px;
+            line-height: 23px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .title h1{
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .promo h2{
+        line-height: 24px;
+    }
+    .services {
+        display: block;
+    }
 
+    .services-title {
+        width: fit-content;
+    }
+
+    .services-items {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .recent-work{
+        padding: 0px;
+    }
+    .recent-work .images{
+        justify-content: center;
+    }
+    .latest-news h2{
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .video-block{
+            align-items: flex-start;
+    }
+    .video-block p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .video-block button{
+        margin-left: -20%;
+    }
+    .text-block{
+        max-width: 75%;
+        margin-left: 34px;
+    }
+    .text-block h2{
+        font-size: 36px;
+        line-height: 38px;
+    }
+    .news-content {
+        column-count: 2;
+        margin-bottom: 0px;
+    }
+    .blockquote{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .social-info div{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .title h2{
+        display: none;
+    }
+    .promo{
+        flex-direction: column;
+    }
+    .promo h2, .promo p{
+        text-align: center;
+    }
+    .services{
+        padding-top: 20px;
+    }
+    .services-title{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .services-title h3, .services-title h4, .services-title p{
+        text-align: center;
+    }
+    .services-title .line{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .recent-work .images{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .video-block {
+        flex-wrap: wrap;
+    }
+    .video-block img {
+        max-width: 100%;
+    }
+    .video-block button{
+        margin-left: 0px;
+    }
+    .video-block p{
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    .text-block{
+    align-items: center;
+    }
+    .text-block h2{
+        margin-top: 40px;
+    }
+    .video-block p {
+    text-align: center;
+    margin: 40px -5px 40px -5px;
+    }
+    .latest-news h2{
+        font-size: 48px;
+        line-height: 38px;
+    }
+    .blockquote{
+        width: 60%;
+    }
+    footer h3{
+        line-height: 26px;
+    }
+    /*
+    .social-info div{
+        padding-top: 20px;
+        column-count: 2;
+        text-align: center;
+    }*/
+}
+@media only screen and (max-width: 320px) {
+    header {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .title h1{
+        font-size: 28px;
+        line-height: 28px;
+        margin-top: 36px;
+    }
+    .intro button{
+        display: none;
+    }
+    .points{
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+    .promo h2{
+        text-align: center;
+    }
+    .services-title p{
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .recent-work h4{
+        
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .recent-work .line {
+        width: 50px;
+    }
+    .recent-work .image{
+        margin-top: 40px;
+    }
+    .text-block h2{
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .video-block{
+        padding: 20px;
+        padding-top: 80px;
+    }
+    .latest-news h2{
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .news-content{
+        column-count: 1;
+    }
+    .blockquote {
+        width: 100%;
+    }
+    .blockquote p{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    footer h3{
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .social-table{
+        flex-direction: column;
+        border: none;
+        align-items: center;
+    }
+    .social-table .fa-twitter, .social-table .fa-google-plus-g, .social-table .fa-pinterest{
+        border: none;
+    }
+    .social-info{
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .social-info div{
+        margin-top: 20px;
+    }
+    div#end {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
