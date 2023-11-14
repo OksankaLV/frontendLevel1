@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#"> <!--prifixs for Open Graph-->
 <head>
+  <title>Digital agency</title>
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  
+  <!--carousel-->
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+  <!--<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">-->
+
   <link rel="stylesheet" href="css/normalize.css">
   <script src="https://kit.fontawesome.com/dfb3f1b7c2.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Roboto+Condensed&family=Roboto:wght@500&display=swap"
     rel="stylesheet">
+  
+
+    <!--Open Graph property-->
+  <meta property="og:title" content="Сторінка Digital agency створена за макетом">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://127.0.0.1:5500/HTML%20and%20CSS%20basics/index.html">
+  <meta property="og:image" content="https://www.socialseo.com/wp-content/uploads/2018/04/iStock-962093578.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!--optional-->
+  <meta property="og:description" content="Ця сторінка створена по готовому макету, при навчанні курсу frontend в Ш++. Ця властивість містить в собі короткий текст-опис сторінки.">
+  <meta property="og:site_names" content="Digital agency">
+
+ 
 
 </head>
 <body>
@@ -24,24 +47,43 @@
   </header>
   <section class="intro">
 
-      <div class="title">
-        <h1> мисли <br> ГЛОБАЛЬНО</h1>
-      
-      <h2> Di Gі — це діджитал агенція повного циклу, спрямована на найкращий <br> результат наших клієнтів в маркетингу, 
+    <div class="owl-carousel owl-theme">
+      <div class="titleBlock">
+        <div class="title">
+          <h1> мисли <br> ГЛОБАЛЬНО</h1>
+          <h2> Di Gі — це діджитал агенція повного циклу, спрямована на найкращий <br> результат наших клієнтів в маркетингу, 
         продажах та управленні</h2>
         </div>
-      <button> Детальніше </button>
-
-      <div class="points">
-        <div class="point"></div>
-        <div class="point-active"></div>
-        <div class="point"></div>
+        <button class="buttonDetalis"> Детальніше </button>
+       <!-- <div class="points">
+          <div class="point"></div>
+          <div class="point-active"></div>
+          <div class="point"></div>
+        </div>-->
       </div>
-
+      <div class="titleBlock">
+        <div class="title">
+          <h1> неможливе <br> можливо</h1>
+          <h2> Di Gі  допоможе структурувати, вдосконалити і організувати план <br> досягення паставлених цілей в маркетингу,
+            продажах та управленні</h2>
+        </div>
+        <button class="buttonDetalis"> Детальніше </button>
+      </div>     
+      <div class="titleBlock">
+        <div class="title">
+          <h1> творимо <br> майбутнє</h1>
+          <h2> Di Gі працюємо для досягнення найкращих результатів <br> в діяльності вашої сфери
+           </h2>
+        </div>
+        <button class="buttonDetalis"> Детальніше </button>
+      </div>
+    </div>
+    <!--
       <div class="pagination">
         <button href="#">❮</button>
         <button href="#">❯</button>
       </div>
+    -->
   </section>  
 
   <section class="promo">
@@ -314,8 +356,14 @@
   <a href="#">НАГОРУ</a>
   <a href="#"><i class="fa-solid fa-chevron-up fa-2xs" style="color: #2b4074;"></i></a>
   </div>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+
+
+  <!-- for ccarousel
+  <script src="jquery.min.js"></script> -->
+  <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
 </body>
 </html>

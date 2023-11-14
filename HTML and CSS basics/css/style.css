@@ -56,6 +56,19 @@ header {
     align-items: center;
     
 }
+.titleBlock{
+    text-align: center;
+}
+button.owl-dot.active span {
+    border: 1px solid;
+}    
+.owl-theme .owl-dots .owl-dot.active span{
+    background: border-box;
+}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
 .title h1 {
     text-align: center;
     /*font-family: 'Roboto Condensed';*/
@@ -75,7 +88,7 @@ header {
     letter-spacing: 0px;
     text-align: center;
 }
-.intro button{
+.buttonDetalis{
     width: 200px;
     height: 50px;
     background-color: var(--color-background);
@@ -85,7 +98,7 @@ header {
     border: 0px;
 }
 
-.pagination{
+.owl-nav, .pagination{
     position: absolute;
     top: 40%;
     right: 0px;
@@ -98,7 +111,7 @@ header {
     text-decoration: none;
     transition: white;
 }
-.pagination button{
+.owl-nav span, .pagination button{
     
     background-color: var(--color-white);
     color: darkgray;
@@ -108,17 +121,23 @@ header {
     margin: 1px;
     border: 0px;
     font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .pagination button:hover {
     background: var(--color-background);
     color: white;
 }
+/*  
 .points{
     display: flex;
     justify-content: space-between;
     width: 50px;
     height: 12px;
     margin-bottom: 79px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .points div{
     width: 6px;
@@ -133,7 +152,7 @@ header {
 .point-active {
     border: 1pxv var(--color-white);
     
-}
+}*/
 
 .promo{
     background: var(--color-background);
@@ -648,6 +667,10 @@ div#end a{
         line-height: 60px;
         letter-spacing: 0px;
         text-align: center;
+    }
+    .owl-nav span{
+        width: 40px;
+        height: 40px;
     }
     .promo h2{
         line-height: 24px;
