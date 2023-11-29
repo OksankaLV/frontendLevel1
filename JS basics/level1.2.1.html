@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!--  1  -->
+<h1>1.</h1>
+<section>
+    <div id="blackSquare"></div>
+    <h1>Приховати чорний квадрат</h1>
+    <button id="withCss" onclick="document.getElementById('blackSquare').style.display='none'"> За допомогою css</button>
+    <button id="deleteWithJs"> js видалення елементу</button>
+    <button id="onHidden">увімкнути клас hidden</button>
+</section>
+<!--  2  -->
+<hr>
+<h1>2.</h1>
+<section>
+<div id="blockTwo"></div>
+<button id="buttonBlock2">Приховати блок</button>
+</section>
+<!--  3  -->
+<hr>
+<h1>3.</h1>
+<section>
+<div class="blackSquare"></div>
+<div class="blackSquare"></div>
+<div class="blackSquare"></div>
+<div class="blackSquare"></div>
+<div class="blackSquare"></div>
+<button id="buttonBlock3">Сховати блоки</button>
+</section>
+<!--  4  -->
+<hr>
+<h1>4.</h1>
+<section>
+    <div>
+<input id="inputSelector" type="text" value="blackSquare">
+<button id="enter">Enter</button>
+    </div>
+</section>
+
+<!--  5  -->
+<hr>
+<h1>5.</h1>
+<section>
+    <div id="block5" class="yellowSquare">
+    </div>
+</section>
+
+<!-- 6 -->
+<hr>
+<h1>6.</h1>
+<section>
+    <button id="button6"> Показати червоний квадрат</button>
+    <div id="block6"></div>
+</section>
+
+<!-- 7 -->
+<hr>
+<h1>7.</h1>
+<section>
+    <input type="text" id="input7" placeholder="Зфокусуйте, щоб побачити зелений блок і почніть вводити текст, щоб приховати його" >
+    <div id="block7"></div>
+</section>
+
+<!-- 8 -->
+<hr>
+<h1>8.</h1>
+<section>
+    <input type="text" id="input8" value="https://images.prom.ua/1183612042_w270_h100_internet-magazin-karamel.jpg">
+    <button id="viewImgButton">Показати картинку</button>
+    <img id="img8" src="" alt="тут має бути картинка">
+</section>
+
+<!-- 9 -->
+<hr>
+<h1>9.</h1>
+<section>
+    <textarea name="inputArea" rows="5" cols="50" id="inputArea" placeholder="Вставте декілька посилань на зображення з нового рядка, або скопіюйте посилання нижче"></textarea>
+    <button id="viewAllImg">Показати </button>
+    <div id="manyImg">місце для картинок<br> 
+    https://images.prom.ua/1183612042_w270_h100_internet-magazin-karamel.jpg <br>
+    https://i.pinimg.com/236x/25/90/a1/2590a1a6759841581e6e1ed7fc91376d.jpg <br>
+    https://img.freepik.com/free-photo/a-cupcake-with-a-strawberry-on-top-and-a-strawberry-on-the-top_1340-35087.jpg?size=626&ext=jpg</div>
+</section>
+
+<!-- 10 - 12
+<hr>
+<h1>10-12</h1> -->
+<section>
+    <div id="infoUser">
+    <!-- X:nn, Y:nn -->
+    <p>10. X: <i><span id="getX"> </span></i>
+        , Y: <i><span id="getY"> </span></i></p>
+    <!-- Language -->
+    <p>11. Lang: <i><span id="language"> </span></i></p>
+    <!-- Ш: ... , Д: ... -->
+    <p>12. Ш: <i><span id="latitude"> </span></i>
+    , Д: <i><span id="longitude"> </span></i></p>
+    </div>
+</section>
+
+<!-- 13 -->
+<hr>
+<h1>13.</h1>
+<section>
+<form>
+    <table>
+        <tr>
+            <td> <label> Save with localStorage </label> </td>
+            <td> <textarea id="textLocalStorage" class="saveText">text</textarea> </td>
+        </tr>
+        <br>
+        <tr>
+            <td><label> Save with cookies </label> </td>
+            <td><textarea id="textCookies" class="saveText">text</textarea> </td>
+        </tr>
+        <br>
+        <tr>
+            <td> <label> Save with sessionStorage </label></td>
+            <td> <textarea id="textSessionStorage" class="saveText">text</textarea> </td>
+        </tr>
+    </table>
+</form>
+</section>
+
+<!-- 14 -->
+<hr>
+<h1>14.</h1>
+<p>Кнопка, яка з'являється коли ми вже прогорнули екран вниз і натисканням на яку, плавно кидає нагору сторінки</p>
+<section>
+<button id="back"> BACK </button>
+</section>
+
+<!-- 15 -->
+<hr>
+<h1>15.</h1>
+<section>
+    <div id="block1" class="block1">
+        <div id="block2" class="block2" onclick="event.stopPropagation()"></div>
+    </div>
+</section>
+
+<!-- 16 -->
+<hr>
+<h1>16.</h1>
+<section>
+    <button id="greyScreenButton">Затемнити екран</button>
+    <div id="greyScreen"></div>
+</section>
+
+<!-- 17 -->
+<hr>
+<h1>17.</h1>
+<form onsubmit="return false"><input type="submit" value="GO"></form>
+
+<!-- 18 -->
+<hr>
+<h1>18.</h1>
+<section>
+    <div id="dragAndDrop" class="dragAndDropStart" draggable="true">
+    <p> Перетягніть сюди файл для відображення інформації про нього</p>
+    <input type="file" id="inputDragAndDrop" multiple>
+    </div>
+    <div id="infoFile">
+</div>
+</section>
+</body>
+<script src="./basics.js"></script>
+</html>

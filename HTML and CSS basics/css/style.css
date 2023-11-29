@@ -65,7 +65,7 @@ button.owl-dot.active span {
 .owl-theme .owl-dots .owl-dot.active span{
     background: border-box;
 }
-.owl-theme .owl-nav.disabled+.owl-dots {
+.owl-theme .owl-nav.disabled, .owl-dots {
     margin-top: 10px;
     margin-bottom: 50px;
 }
