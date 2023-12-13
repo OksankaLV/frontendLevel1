@@ -50,7 +50,7 @@ function insertInfoTown(textformCSV) {
         }, {}
     )
     return (text) => {
-        Object.entries(textRes).forEach(([key, value]) => text = text.replace(key, `${key}: ${value}`))
+        Object.entries(textRes).forEach(([key, value]) => text = text.replace(key, `"${key}" (${value})`))
         return text
     }
 }

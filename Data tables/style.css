@@ -1,0 +1,43 @@
+
+table{
+    border: 1px solid blue;
+    margin: 20px;
+    border-collapse: collapse;
+}
+th{
+    background: rgb(42, 7, 99);
+    color: white;
+    text-align: center;
+}
+th, td {
+    border: 1px solid blue;
+    text-align: center;
+}
+th:hover{
+    cursor: pointer;
+}
+th span.sortMin{
+
+    margin-left: 20px;
+    background: url('./icons8-сортировка-ответов-16.png');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-table;
+}
+
+tr:hover{
+    background-color: darkgray;
+}
+
+th span.sortMax {
+
+    margin-left: 20px;
+    background: url('./icons8-сортировка-по-возрастанию-16.png');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-table;
+}
