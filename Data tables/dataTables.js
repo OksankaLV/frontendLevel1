@@ -1,6 +1,6 @@
 function DataTable(config, data) {
     /*… // вміст цієї функції вам потрібно написати :)*/
-    let place = config1.parent;
+    let place = config.parent;
     const divTable = document.querySelector(place);
     let table = document.createElement('table');
     divTable.appendChild(table);
